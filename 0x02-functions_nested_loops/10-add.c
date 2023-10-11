@@ -7,7 +7,7 @@
  * Return: sum of a and b
  */
 
-in add(int a, int b)
+int add(int a, int b)
 {
 	int sum;
 
