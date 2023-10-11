@@ -4,7 +4,7 @@
  * time_table - a function that prints the nine times table
  */
 
-void time_table(void)
+void times_table(void)
 {
 	int i, j, k;
 
