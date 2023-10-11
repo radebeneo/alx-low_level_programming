@@ -16,11 +16,11 @@ void print_to_98(int n)
 		{
 			if (i != 98)
 			{
-				printf("%d, ", i);
+				_putchar(i + ',' + ' ');
 			}
 			if (i == 98)
 			{
-				printf("%d\n", i);
+				_putchar(i + '\n');
 			}
 		}
 	}
@@ -30,11 +30,11 @@ void print_to_98(int n)
 		{
 			if (j != 98)
 			{
-				printf("%d, ", j);
+				_putchar(j + ',' + ' ');
 			}
 			if (j == 98)
 			{
-				printf("%d\n", j);
+				_putchar(j + '\n');
 			}
 		}
 	}
