@@ -19,7 +19,7 @@ void print_square(int size)
 	while (j < size)
 	{
 		i = 0;
-		while(i < size)
+		while (i < size)
 		{
 			_putchar('#');
 			i++;
