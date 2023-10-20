@@ -9,7 +9,6 @@
 char *cap_string(char *str)
 {
 	int i;
-	char special[] = " \t\n,;.!?''(){}";
 
 	i = 0;
 
@@ -20,16 +19,27 @@ char *cap_string(char *str)
 			i++;
 		}
 
-		for ( ; i < strlen(special); i++)
+		if (str[i - 1] == '\t' ||
+		str[i - 1] == '\n' ||
+		str[i - 1] == ' ' ||
+		str[i - 1] == '!' ||
+		str[i - 1] == '?' ||
+		str[i - 1] == ',' ||
+		str[i - 1] == '.' ||
+		str[i - 1] == ';' ||
+		str[i - 1] == '"' ||
+		str[i - 1] == '(' ||
+		str[i - 1] == ')' ||
+		str[i - 1] == '{' ||
+		str[i - 1] == '}' ||
+		i == 0)
 		{
-			if (str[i - 1] == special[i] || i == 0)
-			{
-				str[i] = str[i] - 32;
-			}
+			str[i] = str[i] - 32;
 		}
 
 		i++;
 	}
 
 	return (str);
+
 }
