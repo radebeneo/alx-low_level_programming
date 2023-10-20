@@ -14,7 +14,7 @@ char *leet(char *c)
 	char letter[] = "AaEeOoTtLl";
 	char code[] = "4433007711";
 
-	for (i = 0; c[!] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
