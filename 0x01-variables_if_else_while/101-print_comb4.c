@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -  a program that prints all possible 
+ * main -  a program that prints all possible
  * different combinations of three digits
  * Return: 0
  */
@@ -26,17 +26,16 @@ int main(void)
 					putchar(hundreds);
 					putchar(tens);
 					putchar(ones);
-				}
-				
-				if (!(hundreds == '7' && tens == '8' && ones == '9'))
-				{
+
+					if (!(hundreds == '7' && tens == '8' && ones == '9'))
+					{
 					putchar(',');
 					putchar(' ');
+					}
 				}
 			}
 		}
-	}
 
 	return (0);
-}	
+}
 
