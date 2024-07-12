@@ -1,7 +1,7 @@
 #include "main.h"
 
-int palindrome_checker(char *s, int i, int len);
 int _strlen_recursion(char *s);
+int palindrome_checker(char *s, int i, int len);
 
 /**
  * is_palindrome - verify if string is palindrome
@@ -34,7 +34,7 @@ int _strlen_recursion(char *s)
  * @len: length of the string
  * Return: 1 if palindrome, 0 if not
  */
-int plaindrome_checker(char *s, int i, int len)
+int palindrome_checker(char *s, int i, int len)
 {
 	if (*(s + 1) != *(s + len - 1))
 		return (0);
