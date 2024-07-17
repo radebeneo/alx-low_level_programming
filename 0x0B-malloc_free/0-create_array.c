@@ -8,7 +8,7 @@
  * Description: creates an array of chars, initializes it with specific char
  * Return: pointer to array, NULL if fail
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char *str;
 	unsigned int i;
