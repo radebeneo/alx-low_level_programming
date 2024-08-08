@@ -41,4 +41,10 @@ Returns: a pointer to the first node of the reversed list
 You are not allowed to use more than 1 loop.
 You are not allowed to use malloc, free or arrays
 You can only declare a maximum of two variables in your function
+13. Write a function that frees a listint_t list.
+Prototype: size_t free_listint_safe(listint_t **h);
+This function can free lists with a loop
+You should go though the list only once
+Returns: the size of the list that was free’d
+The function sets the head to NULL
 
